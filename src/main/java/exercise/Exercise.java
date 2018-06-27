@@ -82,6 +82,7 @@ public class Exercise {
 		logInfo("==== begin");
 		for (int index = 0; index < mins; index++) {
 			logInfo("====: {} minutes left", (mins - index));
+			keepGoing(60);
 		}
 		logInfo("==== end");
 	}
@@ -89,7 +90,8 @@ public class Exercise {
 	private static void doQuikTightenAndRelease() {
 		playHightlightSound(TIGHT_SOUND);
 		logInfo("Quick -><- and <--> begin");
-		keepGoing(60);
+		keepGoing(120);
+		playHightlightSound(RELEASE_SOUND);
 		logInfo("Quick -><- and <--> end");
 	}
 
