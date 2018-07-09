@@ -104,19 +104,14 @@ public class Exercise {
 	}
 
 	private static void playHightlightSound(String soundFile) {
-		playSound(soundFile);
-		keepGoing(1);
-		playSound(soundFile);
-		keepGoing(1);
-		playSound(soundFile);
-		keepGoing(2);
-		
-		playSound(soundFile);
-		keepGoing(1);
-		playSound(soundFile);
-		keepGoing(1);
-		playSound(soundFile);
-		keepGoing(2);
+		for (int index = 0; index < 3; index++) {
+			playSound(soundFile);
+			keepGoing(1);
+			playSound(soundFile);
+			keepGoing(1);
+			playSound(soundFile);
+			keepGoing(2);
+		}
 	}
 
 	private static void logInfo(String info, Object... args) {
