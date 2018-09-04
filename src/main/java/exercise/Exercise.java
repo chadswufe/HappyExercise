@@ -104,7 +104,7 @@ public class Exercise {
 	}
 
 	private static void playHightlightSound(String soundFile) {
-		for (int index = 0; index < 3; index++) {
+		for (int index = 0; index < 2; index++) {
 			playSound(soundFile);
 			keepGoing(1);
 			playSound(soundFile);
